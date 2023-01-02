@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Project Manager</string>
     <string name="project_manager">Project Manager</string>
+    <string name="lets_get_started">Lets Get Started</string>
+    <string name="collaborate_and_plan__">Collaborate and plan togather accroess multiple devices on project manager minimaliest interface</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
