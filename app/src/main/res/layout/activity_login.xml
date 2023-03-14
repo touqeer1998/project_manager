@@ -5,95 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login.ui.LoginActivity">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <TextView
-        android:id="@+id/tvAppName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:text="@string/app_name"
-        android:textAppearance="@style/ta_heading_cayan"
-        android:fontFamily="@font/roboto_bold"
-        app:layout_constraintBottom_toTopOf="@+id/ivProjectManager"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvGetStartedlabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:gravity="center"
-        android:text="@string/lets_get_started"
-        android:textAppearance="@style/ta_sub_heading_grey"
-        app:layout_constraintBottom_toTopOf="@+id/tvGetStartedDetails"
-        app:layout_constraintEnd_toEndOf="@+id/ivProjectManager"
-        app:layout_constraintStart_toStartOf="@+id/ivProjectManager"
-        app:layout_constraintTop_toBottomOf="@+id/ivProjectManager" />
-
-    <TextView
-        android:id="@+id/tvGetStartedDetails"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:layout_marginEnd="@dimen/_15sdp"
-        android:gravity="center"
-        android:text="@string/collaborate_and_plan__"
-        android:textAppearance="@style/ta_body"
-        app:layout_constraintBottom_toTopOf="@+id/btnSignin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvGetStartedlabel" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnSignin"
-        style="@style/sa_bg_null"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_35sdp"
-        android:layout_marginStart="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_35sdp"
-        android:layout_marginEnd="@dimen/_15sdp"
-        android:fontFamily="@font/roboto_bold"
-        android:background="@drawable/bg_gr_stroke_white_corner_rds"
-        android:text="@string/sign_in"
-        android:textAppearance="@style/ta_heading"
-        app:layout_constraintBottom_toTopOf="@+id/btnSignup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvGetStartedDetails" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnSignup"
-        style="@style/sa_bg_white_stroke_lightblue"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_15sdp"
-        android:layout_marginBottom="@dimen/_20sdp"
-        android:text="@string/sign_up"
-        android:textAppearance="@style/ta_heading"
-        android:textColor="@color/cayan"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_container_main"
+        android:name="com.example.projectmanager.login.ui.MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignin" />
-
-    <ImageView
-        android:id="@+id/ivProjectManager"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_24sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:alpha=".8"
-        app:layout_constraintBottom_toTopOf="@+id/tvGetStartedlabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAppName"
-        app:srcCompat="@drawable/project_manager_login"
-        android:contentDescription="@string/login_screen_project_manager_image" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

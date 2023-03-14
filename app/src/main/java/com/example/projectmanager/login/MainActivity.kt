@@ -1,7 +1,8 @@
-package com.example.projectmanager
+package com.example.projectmanager.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.projectmanager.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
