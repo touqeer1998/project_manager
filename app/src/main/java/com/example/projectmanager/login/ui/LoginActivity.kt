@@ -1,4 +1,4 @@
-package com.example.projectmanager.login
+package com.example.projectmanager.login.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
