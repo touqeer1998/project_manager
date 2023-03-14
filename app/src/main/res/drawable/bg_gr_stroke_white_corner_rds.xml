@@ -7,6 +7,6 @@
         android:centerColor="#009688"
         android:type="linear">
     </gradient>
-    <corners android:radius="10dp"/>
+    <corners android:radius="@dimen/_7sdp"/>
 
 </shape>
