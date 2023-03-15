@@ -59,34 +59,54 @@
         app:layout_constraintTop_toBottomOf="@+id/etName" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_30sdp"
-        app:passwordToggleEnabled="true"
         android:hint="@string/enter_a_strong_password"
         app:hintTextColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:passwordToggleEnabled="true">
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:autofillHints="password"
             android:background="@color/white"
-            android:paddingHorizontal="0dp"
             android:gravity="start"
+            android:inputType="textPassword"
+            android:paddingHorizontal="0dp"
             android:paddingStart="@dimen/_1sdp"
             android:paddingEnd="@dimen/_1sdp"
-            android:layout_weight="1"
-            android:inputType="textPassword"
             android:textAppearance="@style/ta_body" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/if_you_already_have_an_account"
+        android:textAppearance="@style/ta_10sp_grey"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
-<com.google.android.material.button.MaterialButton
+    <TextView
+        android:id="@+id/taSingInInstead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_2sdp"
+        android:text="@string/sing_in_instead"
+        android:textAppearance="@style/ta_10sp_bold"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSignup"
         style="@style/btn_style"
         android:layout_width="0dp"

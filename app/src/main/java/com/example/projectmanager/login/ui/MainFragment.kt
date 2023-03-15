@@ -30,7 +30,9 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnSignup.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_signupFragment3)
-//            findNavController().navigate()
+        }
+        binding.btnSignin.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_loginFragment2)
         }
     }
 }

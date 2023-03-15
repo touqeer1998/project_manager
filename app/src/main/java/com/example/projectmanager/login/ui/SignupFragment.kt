@@ -1,16 +1,20 @@
 package com.example.projectmanager.login.ui
 
+import android.app.Activity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.projectmanager.R
 import com.example.projectmanager.databinding.FragmentMainBinding
 import com.example.projectmanager.databinding.FragmentSignUpBinding
+import com.google.android.material.appbar.MaterialToolbar
 
 class SignupFragment : Fragment() {
     private var _binding: FragmentSignUpBinding? = null
@@ -36,6 +40,14 @@ class SignupFragment : Fragment() {
                 Toast.makeText(requireContext(), "Invalid Input", Toast.LENGTH_SHORT).show()
             }
         }
+        binding.taSingInInstead.setOnClickListener {
+            findNavController().navigate(R.id.action_signupFragment_to_loginFragment2)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        requireActivity().actionBar?.title = getString(R.string.sign_up)
     }
 
     private fun isInputValid():Boolean {
