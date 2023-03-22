@@ -41,7 +41,7 @@ class SignupFragment : Fragment() {
             }
         }
         binding.taSingInInstead.setOnClickListener {
-            findNavController().navigate(R.id.action_signupFragment_to_loginFragment2)
+            findNavController().navigate(R.id.action_signupFragment_to_loginFragment)
         }
     }
 

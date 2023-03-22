@@ -40,7 +40,7 @@
         android:layout_height="@dimen/_50sdp"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_30sdp"
-        android:hint="@string/enter_a_strong_password"
+        android:hint="@string/enter_your_password"
         app:hintTextColor="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,6 +54,7 @@
             android:autofillHints="password"
             android:background="@color/white"
             android:inputType="textPassword"
+            android:paddingBottom="0dp"
             android:paddingStart="@dimen/_1sdp"
             android:paddingEnd="@dimen/_1sdp" />
     </com.google.android.material.textfield.TextInputLayout>

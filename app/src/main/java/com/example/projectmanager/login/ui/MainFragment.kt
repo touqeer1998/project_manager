@@ -29,10 +29,10 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnSignup.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_signupFragment3)
+            findNavController().navigate(R.id.action_mainFragment_to_signupFragment)
         }
         binding.btnSignin.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_loginFragment2)
+            findNavController().navigate(R.id.action_mainFragment_to_loginFragment)
         }
     }
 }
