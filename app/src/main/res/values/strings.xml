@@ -27,4 +27,16 @@
     <string name="enter_your_password">Enter your password</string>
     <string name="if_you_already_have_an_account">If you already have an account</string>
     <string name="sing_in_instead"><u>Sing in instead</u></string>
+    <string name="title_activity_login_main">LoginActivityMain</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="login">Login</string>
+    <string name="home">Home</string>
 </resources>
