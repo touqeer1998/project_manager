@@ -6,28 +6,17 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvSignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:text="@string/sign_up"
-        android:textAppearance="@style/ta_heading_grey"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/taDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_8sdp"
         android:gravity="start"
         android:text="@string/enter_your_name_id____"
         android:textAppearance="@style/ta_body"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSignup" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etName"
@@ -86,24 +75,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:text="@string/if_you_already_have_an_account"
-        android:textAppearance="@style/ta_10sp_grey"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
-
-    <TextView
         android:id="@+id/taSingInInstead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_2sdp"
-        android:text="@string/sing_in_instead"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/or_sing_in_instead"
         android:textAppearance="@style/ta_10sp_bold"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignup"
+        app:layout_constraintStart_toStartOf="@+id/btnSignup" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSignup"
@@ -111,10 +91,10 @@
         android:layout_width="0dp"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:text="@string/sign_up"
         android:textAppearance="@style/ta_heading"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/taSingInInstead"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

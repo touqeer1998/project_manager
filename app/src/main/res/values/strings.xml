@@ -26,7 +26,7 @@
     <string name="enter_you_email_and_password_to_login">Enter you email and password to login with us</string>
     <string name="enter_your_password">Enter your password</string>
     <string name="if_you_already_have_an_account">If you already have an account</string>
-    <string name="sing_in_instead"><u>Sing in instead</u></string>
+    <string name="or_sing_in_instead"><u>or sing in instead</u></string>
     <string name="title_activity_login_main">LoginActivityMain</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

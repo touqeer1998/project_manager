@@ -25,9 +25,6 @@
         tools:layout="@layout/fragment_signup">
 
         <action
-            android:id="@+id/action_SignUpFragment_to_MainFragment"
-            app:destination="@id/MainFragment" />
-        <action
             android:id="@+id/action_SignUpFragment_to_loginFragment2"
             app:destination="@id/loginFragment" />
     </fragment>
