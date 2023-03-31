@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -51,8 +52,11 @@ dependencies {
     implementation 'app.rive:rive-android:4.0.0'
     implementation "androidx.startup:startup-runtime:1.1.1"
 
-    //Google Services
+    //firebase
     implementation 'com.google.firebase:firebase-auth:21.2.0'
+    implementation platform('com.google.firebase:firebase-bom:31.3.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
 
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
