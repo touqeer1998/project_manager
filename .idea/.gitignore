@@ -14,6 +14,7 @@ local.properties
 
 # Log/OS Files
 *.log
+*.lock
 
 # Android Studio generated files and folders
 captures/
@@ -26,7 +27,7 @@ output.json
 *.iml
 .idea/
 .name
-*.
+*.bin
 misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
