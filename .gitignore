@@ -2,9 +2,9 @@
 /shelf/
 /.idea/workspace.xml
 /misc.xml
-/gradle.xml
 compiler.xml
 
+#these two almost lock 950 files
 # Gradle files
 .gradle/
 build/
@@ -18,7 +18,6 @@ captures/
 .externalNativeBuild/
 .cxx/
 *.apk
-output.json
 
 # IntelliJ
 *.iml
