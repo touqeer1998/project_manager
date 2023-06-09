@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
     <style name="Theme.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/teal_700</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/launcher_ic_round</item>
@@ -8,5 +8,5 @@
         <item name="postSplashScreenTheme">@style/Theme.ProjectManager</item>
         <item name="windowSplashScreenAnimationDuration">1000</item>
     </style>
-    
+
 </resources>

@@ -11,8 +11,8 @@
         android:id="@+id/tvLoginDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_30sdp"
         android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:gravity="center_vertical"
         android:text="@string/enter_you_email_and_password_to_login"
         android:textAppearance="@style/ta_body"
@@ -54,9 +54,9 @@
             android:autofillHints="password"
             android:background="@color/white"
             android:inputType="textPassword"
-            android:paddingBottom="0dp"
             android:paddingStart="@dimen/_1sdp"
-            android:paddingEnd="@dimen/_1sdp" />
+            android:paddingEnd="@dimen/_1sdp"
+            android:paddingBottom="0dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
