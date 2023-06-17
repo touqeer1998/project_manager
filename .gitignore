@@ -1,0 +1,37 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+/misc.xml
+/gradle.xml
+compiler.xml
+
+# Gradle files
+.gradle/
+build/
+
+# Log/OS Files
+*.log
+*.lock
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+output.json
+
+# IntelliJ
+*.iml
+.idea/
+.name
+*.bin
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# Android Profiling
+*.hprof
